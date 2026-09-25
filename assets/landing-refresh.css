@@ -113,6 +113,16 @@ html[data-lang="es"] .hero-mini .l-en,html[data-lang="en"] .hero-mini .l-es{disp
 .story .pullquote cite{color:#486a57}
 
 .video{background:radial-gradient(ellipse at 100% 0%,rgba(24,141,93,.2),transparent 50%),#08251b}
+.game-feature{border:1px solid rgba(255,255,255,.22);background:#04170f;padding:10px}
+.game-screen{position:relative;background:#000}
+.game-screen video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#000}
+.game-info{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:30px;padding:32px 26px 25px}
+.game-info h3{font-size:clamp(2.5rem,5vw,5rem);line-height:.95;margin:12px 0}
+.game-info p{color:#d3e1d4;max-width:650px;margin:0}
+.game-info a{border-bottom:1px solid var(--gold);color:var(--gold);padding-bottom:5px;white-space:nowrap;font:600 .76rem "Oswald",sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.game-info a:hover{color:#fff;border-color:#fff}
+.archive-head{margin:95px 0 35px;padding-top:28px;border-top:1px solid rgba(255,255,255,.2)}
+.archive-head h3{font-size:clamp(2rem,4.3vw,3.8rem);margin:8px 0 0}
 .feat-video video{border-color:rgba(255,255,255,.3);box-shadow:16px 16px 0 rgba(11,120,77,.35)}
 .vert-card{border-radius:6px;background:#133b2d}
 .vert-card .vcap{color:#d8e7d9}
@@ -220,6 +230,11 @@ footer{background:#04180f}
   .verified-grid span{font-size:.58rem}
   .award-grid{grid-template-columns:1fr}
   .sec-head h2{font-size:clamp(2.6rem,11vw,4rem)}
+  .game-feature{padding:5px}
+  .game-info{grid-template-columns:1fr;padding:24px 17px;gap:20px}
+  .game-info h3{font-size:clamp(2.2rem,10vw,3.8rem)}
+  .game-info a{justify-self:start}
+  .archive-head{margin-top:70px}
 }
 @media(max-width:360px){
   .nav.wrap{padding-left:10px;padding-right:10px}
