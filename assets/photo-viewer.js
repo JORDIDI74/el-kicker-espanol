@@ -27,6 +27,8 @@
   let opener = null;
   let priorOverflow = '';
   let historyAdded = false;
+  let pendingHistoryBack = false;
+  let pendingOpenIndex = null;
   const isOpen = () => nativeDialog ? viewer.open : viewer.classList.contains('pv-open');
 
   function updateLabels() {
@@ -56,13 +58,19 @@
     else viewer.classList.remove('pv-open');
     document.body.style.overflow = priorOverflow;
     image.removeAttribute('src');
-    if (!fromHistory && historyAdded && history.state?.photoViewer) history.back();
+    const returnToPage = !fromHistory && historyAdded && history.state?.photoViewer;
     historyAdded = false;
     opener?.focus({ preventScroll: true });
+    if (returnToPage) {
+      // Wait for the matching popstate before allowing another viewer history entry.
+      pendingHistoryBack = true;
+      try { history.back(); }
+      catch (_) { pendingHistoryBack = false; }
+    }
   }
 
-  photos.forEach((button, index) => button.addEventListener('click', () => {
-    if (isOpen()) return;
+  function openPhoto(index) {
+    const button = photos[index];
     opener = button;
     priorOverflow = document.body.style.overflow;
     updateLabels();
@@ -73,6 +81,15 @@
     closeButton.focus();
     try { history.pushState({ ...history.state, photoViewer: true }, '', location.href); historyAdded = true; }
     catch (_) { historyAdded = false; }
+  }
+
+  photos.forEach((button, index) => button.addEventListener('click', () => {
+    if (isOpen()) return;
+    if (pendingHistoryBack) {
+      pendingOpenIndex = index;
+      return;
+    }
+    openPhoto(index);
   }));
 
   closeButton.addEventListener('click', () => close());
@@ -81,7 +98,16 @@
   nextButton.addEventListener('click', () => showPhoto(current + 1));
   viewer.addEventListener('click', event => { if (event.target === viewer || event.target === stage) close(); });
   viewer.addEventListener('cancel', event => { event.preventDefault(); close(); });
-  window.addEventListener('popstate', () => { if (isOpen()) close(true); });
+  window.addEventListener('popstate', () => {
+    if (pendingHistoryBack) {
+      pendingHistoryBack = false;
+      if (pendingOpenIndex !== null) {
+        const index = pendingOpenIndex;
+        pendingOpenIndex = null;
+        openPhoto(index);
+      }
+    } else if (isOpen()) close(true);
+  });
   document.addEventListener('keydown', event => {
     if (!isOpen()) return;
     if (event.key === 'Escape') close();
