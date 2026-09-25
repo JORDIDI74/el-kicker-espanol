@@ -16,6 +16,6 @@ Las fotos JPG y los vídeos MP4 se sirven desde `assets/`. No existe integració
 
 El montaje **Marshall–Missouri State** procede del archivo facilitado en Dropbox. La copia publicada en `assets/marshall-missouri-state-fg.mp4` conserva el audio y está optimizada a H.264/AAC, 720p y 30 fps (aprox. 20 MB frente a 75 MB del original). El vídeo usa `preload="none"` y una portada JPG para evitar una descarga automática al abrir la landing.
 
-El vídeo **Marshall–Penn State** muestra el primer intento universitario de field goal de Jorge desde 52 yardas. `assets/marshall-penn-state-first-fg-attempt.mp4` es una copia H.264/AAC optimizada del MOV facilitado en Dropbox (aprox. 24 MB frente a 155 MB). La descripción no atribuye un resultado al intento. También usa `preload="none"` y una portada JPG.
+El vídeo **Marshall–Penn State** muestra el primer intento universitario de field goal de Jorge desde 52 yardas, el 5 de septiembre de 2026 en Beaver Stadium. [Penn State registró 108.489 espectadores](https://gopsusports.com/news/2026/09/05/no-1817-penn-state-shuts-out-marshall-45-0-in-campbells-debut-as-head-coach). `assets/marshall-penn-state-first-fg-attempt.mp4` es una copia H.264/AAC optimizada del MOV facilitado en Dropbox (aprox. 24 MB frente a 155 MB). La descripción no atribuye un resultado al intento. También usa `preload="none"` y una portada JPG.
 
 Para previsualizar los cambios en local, sirve la carpeta raíz con un servidor HTTP estático y abre `index.html` en el navegador.

@@ -125,6 +125,8 @@ html[data-lang="es"] .hero-mini .l-en,html[data-lang="en"] .hero-mini .l-es{disp
 .game-feature--secondary .game-screen video{height:100%;aspect-ratio:16/9}
 .game-feature--secondary .game-info{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:0;padding:clamp(24px,3vw,44px)}
 .game-feature--secondary .game-info h3{font-size:clamp(2.3rem,4vw,4.2rem)}
+.game-feature--secondary .game-info p b{color:#fff}
+.game-feature--secondary .game-info a{margin-top:24px}
 .archive-head{margin:95px 0 35px;padding-top:28px;border-top:1px solid rgba(255,255,255,.2)}
 .archive-head h3{font-size:clamp(2rem,4.3vw,3.8rem);margin:8px 0 0}
 .feat-video video{border-color:rgba(255,255,255,.3);box-shadow:16px 16px 0 rgba(11,120,77,.35)}
