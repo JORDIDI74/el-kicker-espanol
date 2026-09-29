@@ -415,6 +415,41 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
   .award-imgs .photo-trigger img{height:auto}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.scrolldown .line{animation:none}.act-media img,.grid-gal img{transition:none}}
+
+/* temporada 2026 */
+.season{background:linear-gradient(180deg,var(--ink2),var(--ink));position:relative;overflow:hidden}
+.season .wrap{position:relative}
+.live-chip{display:inline-flex;align-items:center;gap:8px;font-family:"Oswald";text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;font-weight:600;color:#fff;background:rgba(228,0,43,.14);border:1px solid rgba(228,0,43,.45);border-radius:100px;padding:6px 13px;margin-bottom:16px}
+.live-chip i{width:7px;height:7px;border-radius:50%;background:var(--red);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(228,0,43,.6)}70%{box-shadow:0 0 0 10px rgba(228,0,43,0)}100%{box-shadow:0 0 0 0 rgba(228,0,43,0)}}
+.gw{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.gw .game-screen{border:1px solid var(--line2)}
+.gw .game-screen video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#000}
+.gw-score{font-family:"Anton";font-size:clamp(3rem,7vw,4.6rem);line-height:.9;display:flex;align-items:baseline;gap:14px}
+.gw-score b{color:#3fbf6a;font-weight:400}.gw-score span{color:var(--muted);font-size:.5em}
+.gw-meta{font-family:"Oswald";text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;color:var(--soft);margin:10px 0 20px}
+.gw-text p{color:var(--soft);font-size:1.06rem;margin:0 0 18px}
+.gw-text p b{color:#fff}
+.gw-text blockquote{margin:0;padding-left:18px;border-left:3px solid var(--gold)}
+.gw-text blockquote p{color:#fff;font-size:1.08rem;margin:0}
+.gw-text blockquote cite{display:block;margin-top:6px;font-family:"Oswald";text-transform:uppercase;letter-spacing:.12em;font-size:.68rem;color:var(--gold);font-style:normal}
+@media(max-width:860px){.gw{grid-template-columns:1fr;gap:24px}}
+.season .kpis{margin-top:44px}
+.src-note{display:block;margin-top:12px;font-size:.78rem;color:var(--muted);text-align:center}
+.src-note a{text-decoration:underline;text-underline-offset:3px}
+.games{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.game{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:8px}
+.game.star{border-color:rgba(234,193,106,.55)}
+.game .gdate{font-family:"Oswald";text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:var(--muted)}
+.game h4{font-family:"Oswald";text-transform:uppercase;letter-spacing:.03em;font-size:1.02rem;margin:0;color:#fff;line-height:1.2}
+.game .res{font-family:"Anton";font-size:1.5rem;line-height:1}
+.game .res.w{color:#3fbf6a}.game .res.l{color:var(--muted)}
+.game p{margin:0;color:var(--soft);font-size:.92rem}
+.game p b{color:#fff}
+@media(max-width:980px){.games{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.games{grid-template-columns:1fr}}
+.sub-h{font-family:"Oswald";text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:600;color:var(--gold);margin:52px 0 16px}
+@media(max-width:560px){header .ig{display:none}}
 </style>
 <link rel="stylesheet" href="assets/landing-refresh.css">
 <link rel="stylesheet" href="assets/classic-cover.css">
@@ -426,6 +461,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
   <div class="wrap nav">
     <div class="brand"><span class="flag"><i></i><i></i><i></i></span> EL&nbsp;KICKER&nbsp;<b>ESPAÑOL</b></div>
     <nav class="navlinks">
+      <a href="#temporada">2026</a>
       <a href="#historia"><span class="l-es">Historia</span><span class="l-en">Story</span></a>
       <a href="#video"><span class="l-es">Vídeo</span><span class="l-en">Video</span></a>
       <a href="#palmares"><span class="l-es">Palmarés</span><span class="l-en">Honors</span></a>
@@ -445,17 +481,17 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <div class="hero-route">Madrid <span aria-hidden="true">/</span> Maryland <span aria-hidden="true">/</span> Virginia <span aria-hidden="true">/</span> Marshall</div>
       <div class="h-name">Jorge Díaz Nicolás · <span style="color:var(--gold)">«Gold&nbsp;Toe»</span></div>
       <h1 class="titlewall display">El kicker<br><span class="l2">español</span></h1>
-      <p class="lede"><span class="l-es">De Madrid a Marshall. Hoy viste el <b>#41 en la NCAA División I FBS</b>, compite en la Sun Belt y ya ha anotado sus primeros field goals universitarios.</span><span class="l-en">From Madrid to Marshall. Now wearing <b>#41 in NCAA Division I FBS</b>, he competes in the Sun Belt and has scored his first college field goals.</span></p>
+      <p class="lede"><span class="l-es">De Madrid a Marshall. Hoy viste el <b>#41 en la NCAA División I FBS</b>, compite en la Sun Belt y ya ha dado a Marshall <b>una victoria con un field goal a 3 segundos del final</b>.</span><span class="l-en">From Madrid to Marshall. Now wearing <b>#41 in NCAA Division I FBS</b>, he competes in the Sun Belt and has already won a game for Marshall with <b>a field goal with 3 seconds left</b>.</span></p>
       <div class="cta">
         <a class="btn btn-primary" href="#historia"><span class="l-es">▶ Ver su historia</span><span class="l-en">▶ See his story</span></a>
-        <a class="btn btn-ghost" href="#video">Highlights</a>
+        <a class="btn btn-ghost" href="#temporada"><span class="l-es">★ Temporada 2026</span><span class="l-en">★ 2026 season</span></a>
       </div>
       <div class="hero-mini">
-        <div><b>3/4<small> FG</small></b><span><span class="l-es">Marshall · 22 sep. 2026</span><span class="l-en">Marshall · Sep 22, 2026</span></span></div>
-        <div><b>53<small> yd</small></b><span><span class="l-es">Máximo en instituto</span><span class="l-en">High school long</span></span></div>
+        <div><b>6/8<small> FG</small></b><span><span class="l-es">Marshall · 27 sep. 2026</span><span class="l-en">Marshall · Sep 27, 2026</span></span></div>
+        <div><b>54<small> yd</small></b><span><span class="l-es">Su FG más largo · NCAA</span><span class="l-en">Career long · NCAA</span></span></div>
         <div><b>D-I<small> FBS</small></b><span>Sun Belt Conference</span></div>
       </div>
-      <a class="hero-source" href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 22 sep. 2026</span><span class="l-en">Official stats · Sep 22, 2026</span> ↗</a>
+      <a class="hero-source" href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 27 sep. 2026</span><span class="l-en">Official stats · Sep 27, 2026</span> ↗</a>
     </div>
   </div>
   <div class="hero-right">
@@ -471,10 +507,62 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
     <div class="now-date"><span class="l-es">Ahora</span><span class="l-en">Now</span><b>2026</b></div>
     <div class="now-copy">
       <span class="label">Marshall · Thundering Herd</span>
-      <h2 class="display"><span class="l-es">Sus primeros puntos en la FBS</span><span class="l-en">His first FBS points</span></h2>
-      <p><span class="l-es">Tres field goals y siete puntos extra en los tres primeros partidos de 2026. Datos oficiales de Marshall al 22 de septiembre.</span><span class="l-en">Three field goals and seven extra points in the first three games of 2026. Official Marshall figures as of September 22.</span></p>
+      <h2 class="display"><span class="l-es">36–35: su primer field goal ganador</span><span class="l-en">36–35: his first game-winner</span></h2>
+      <p><span class="l-es">Marshall 36, Gardner-Webb 35: field goal de 32 yardas a 3 segundos del final. Esa noche también metió uno de 54, el más largo de su carrera.</span><span class="l-en">Marshall 36, Gardner-Webb 35: a 32-yard field goal with 3 seconds left. That night he also hit a 54-yarder, the longest of his career.</span></p>
     </div>
-    <a class="now-link" href="https://herdzone.com/news/2026/9/19/marshall-football-takes-down-missouri-state-30-24" target="_blank" rel="noopener"><span class="l-es">Ver la crónica oficial</span><span class="l-en">Read the official recap</span><span aria-hidden="true">↗</span></a>
+    <a class="now-link" href="#temporada"><span class="l-es">Ver el vídeo</span><span class="l-en">Watch the video</span><span aria-hidden="true">↓</span></a>
+  </div>
+</section>
+
+<!-- TEMPORADA 2026 -->
+<section class="season" id="temporada">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="live-chip"><i></i><span class="l-es">Temporada 2026 · Marshall #41</span><span class="l-en">2026 season · Marshall #41</span></span>
+      <h2 class="display"><span class="l-es">El field goal que ganó el partido</span><span class="l-en">The kick that won the game</span></h2>
+      <p><span class="l-es">Su primer mes en la FBS: debut ante más de 100.000 personas, sus primeros field goals en la NCAA y, en Homecoming, la patada que dio la victoria a Marshall.</span><span class="l-en">His first month in the FBS: a debut in front of 100,000-plus fans, his first NCAA field goals and, at Homecoming, the kick that won it for Marshall.</span></p>
+    </div>
+
+    <div class="gw rv d1">
+      <div class="game-screen"><video controls playsinline preload="none" poster="assets/poster-gw-winner.jpg"><source src="assets/gw-winner.mp4" type="video/mp4"></video></div>
+      <div class="gw-text">
+        <div class="gw-score"><b>36</b><span>–</span>35</div>
+        <div class="gw-meta">Marshall vs. Gardner-Webb · Homecoming · 26-09-2026 · ESPN</div>
+        <p><span class="l-es">Marshall pierde 35-33 en el último cuarto y apura los segundos finales. Gardner-Webb pide tiempo muerto para <b>enfriar al kicker</b>, como ya le hizo Penn State en su debut. Esta vez Jorge vuelve a colocarse… y la mete desde <b>32 yardas con 3 segundos en el reloj</b>. Esa misma noche ya había anotado un <b>field goal de 54 yardas</b>, el más largo de su carrera. En España ya era <b>domingo, pasada la 1 de la madrugada</b>.</span><span class="l-en">Marshall trails 35-33 late in the fourth quarter. Gardner-Webb calls timeout to <b>ice the kicker</b>, just as Penn State did in his debut. This time Jorge lines up again… and drills it from <b>32 yards with 3 seconds on the clock</b>. Earlier that night he had already hit a <b>54-yard field goal</b>, the longest of his career.</span></p>
+        <blockquote><p><span class="l-es">«Después del tiempo muerto me dije: ten confianza, y respiré hondo.»</span><span class="l-en">"After the timeout, I said be confident and did some deep breathing."</span></p><cite>Jorge Díaz Nicolás · WV MetroNews</cite></blockquote>
+      </div>
+    </div>
+
+    <div class="kpis">
+      <div class="kpi rv d1"><b><span data-count="54">0</span><small> yd</small></b><span><span class="l-es">FG más largo de su carrera</span><span class="l-en">Career-long field goal</span></span></div>
+      <div class="kpi rv d2"><b>6/8</b><span><span class="l-es">Field goals en 2026</span><span class="l-en">Field goals in 2026</span></span></div>
+      <div class="kpi rv d3"><b>10/10</b><span><span class="l-es">Puntos extra · 100%</span><span class="l-en">Extra points · 100%</span></span></div>
+      <div class="kpi rv d4"><b data-count="28">0</b><span><span class="l-es">Puntos en 4 partidos</span><span class="l-en">Points in 4 games</span></span></div>
+    </div>
+    <span class="src-note"><span class="l-es">Fuente: <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener">estadísticas oficiales de Marshall</a> y ESPN · datos a 27-sep-2026.</span><span class="l-en">Source: <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener">official Marshall statistics</a> and ESPN · as of Sep 27, 2026.</span></span>
+
+    <div class="games">
+      <div class="game rv"><span class="gdate"><span class="l-es">5 sep · visitante</span><span class="l-en">Sep 5 · away</span></span><h4>@ #18 Penn State</h4><div class="res l">0–45</div><p><span class="l-es"><b>El debut.</b> Primer intento de su carrera, de <b>52 yardas</b>, ante <b>108.489</b> espectadores y en directo en FOX (FS1). <b>La metió</b>, pero Penn State había pedido tiempo muerto para enfriarle y no contó; la repetición no entró.</span><span class="l-en"><b>The debut.</b> The first attempt of his career, from <b>52 yards</b>, in front of <b>108,489</b> fans, live on FOX (FS1). <b>He made it</b>, but Penn State had called timeout to ice him and it didn't count; the retry was no good.</span></p></div>
+      <div class="game rv d1"><span class="gdate"><span class="l-es">12 sep · en casa</span><span class="l-en">Sep 12 · home</span></span><h4>vs. Middle Tennessee</h4><div class="res w">28–26</div><p><span class="l-es">Primera victoria de la temporada, en un final igualado en Huntington.</span><span class="l-en">First win of the season, in a tight finish in Huntington.</span></p></div>
+      <div class="game rv d2"><span class="gdate"><span class="l-es">19 sep · visitante</span><span class="l-en">Sep 19 · away</span></span><h4>@ Missouri State</h4><div class="res w">30–24</div><p><span class="l-es"><b>Sus primeros field goals en la NCAA: 3 de 3</b>, de 28, 32 y 31 yardas. En directo en CBS Sports.</span><span class="l-en"><b>His first NCAA field goals: 3 for 3</b>, from 28, 32 and 31 yards. Live on CBS Sports.</span></p></div>
+      <div class="game star rv d3"><span class="gdate"><span class="l-es">26 sep · Homecoming (domingo 27 en España)</span><span class="l-en">Sep 26 · Homecoming</span></span><h4>vs. Gardner-Webb</h4><div class="res w">36–35</div><p><span class="l-es"><b>3 de 4:</b> 54 yardas (récord personal), 21 y el <b>field goal ganador de 32</b> a 3 segundos del final. 25.710 espectadores.</span><span class="l-en"><b>3 for 4:</b> 54 yards (career long), 21, and the <b>32-yard game-winner</b> with 3 seconds left. 25,710 fans.</span></p></div>
+    </div>
+
+    <p class="src-note rv"><span class="l-es">Los vídeos de Penn State y Missouri State, en <a href="#video">Highlights ↓</a></span><span class="l-en">The Penn State and Missouri State videos are in <a href="#video">Highlights ↓</a></span></p>
+
+    <div class="sub-h rv"><span class="l-es">Septiembre, en fotos · toca para ampliar</span><span class="l-en">September, in pictures · tap to enlarge</span></div>
+    <div class="grid-gal rv">
+      <button type="button" class="photo-trigger g-tall" data-photo="assets/ps-kick.jpg"><img src="assets/ps-kick.jpg" alt="Jorge golpea en Beaver Stadium ante Penn State" loading="lazy"><div class="cap">Penn State · Beaver Stadium</div></button>
+      <button type="button" class="photo-trigger g-wide" data-photo="assets/gw-kick.jpg"><img src="assets/gw-kick.jpg" alt="Jorge golpea un field goal ante Gardner-Webb en Huntington" loading="lazy"><div class="cap">Huntington · vs. Gardner-Webb</div></button>
+      <button type="button" class="photo-trigger" data-photo="assets/gw-final.jpg"><img src="assets/gw-final.jpg" alt="The Herd wins — Marshall 36, Gardner-Webb 35" loading="lazy"><div class="cap">Final · 36–35</div></button>
+      <button type="button" class="photo-trigger g-tall" data-photo="assets/ps-helmet.jpg"><img src="assets/ps-helmet.jpg" alt="Jorge con el casco de Marshall" loading="lazy"><div class="cap"><span class="l-es">Concentración</span><span class="l-en">Focus</span></div></button>
+      <button type="button" class="photo-trigger g-wide" data-photo="assets/gw-hug.jpg"><img src="assets/gw-hug.jpg" alt="Jorge celebra el field goal ganador" loading="lazy"><div class="cap"><span class="l-es">La celebración</span><span class="l-en">The celebration</span></div></button>
+      <button type="button" class="photo-trigger" data-photo="assets/ps-attendance.jpg"><img src="assets/ps-attendance.jpg" alt="Marcador de Beaver Stadium: asistencia de 108.489" loading="lazy"><div class="cap"><span class="l-es">108.489 espectadores</span><span class="l-en">108,489 fans</span></div></button>
+      <button type="button" class="photo-trigger g-wide" data-photo="assets/ps-stadium.jpg"><img src="assets/ps-stadium.jpg" alt="Calentamiento en Beaver Stadium" loading="lazy"><div class="cap"><span class="l-es">Calentamiento · Penn State</span><span class="l-en">Warm-up · Penn State</span></div></button>
+      <button type="button" class="photo-trigger" data-photo="assets/ps-bench.jpg"><img src="assets/ps-bench.jpg" alt="Jorge en la banda de Beaver Stadium" loading="lazy"><div class="cap"><span class="l-es">En la banda</span><span class="l-en">On the sideline</span></div></button>
+      <button type="button" class="photo-trigger g-wide" data-photo="assets/gw-fans.jpg"><img src="assets/gw-fans.jpg" alt="Jorge saluda a la afición de Marshall" loading="lazy"><div class="cap"><span class="l-es">Con la afición</span><span class="l-en">With the fans</span></div></button>
+      <button type="button" class="photo-trigger g-wide" data-photo="assets/ps-setup.jpg"><img src="assets/ps-setup.jpg" alt="Jorge preparado para el field goal ante Penn State" loading="lazy"><div class="cap"><span class="l-es">Preparado · Penn State</span><span class="l-en">Ready · Penn State</span></div></button>
+    </div>
   </div>
 </section>
 
@@ -575,7 +663,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <div class="game-info">
         <span class="label">Marshall · Penn State · 05.09.2026</span>
         <h3 class="display"><span class="l-es">El primer intento<br>de field goal.</span><span class="l-en">The first<br>field goal attempt.</span></h3>
-        <p><span class="l-es"><b>108.489 espectadores</b> en Beaver Stadium. Allí, Jorge afrontó desde 52 yardas su primer intento de field goal universitario con Marshall.</span><span class="l-en"><b>108,489 fans</b> at Beaver Stadium. There, Jorge faced a 52-yard attempt, his first college field goal attempt with Marshall.</span></p>
+        <p><span class="l-es"><b>108.489 espectadores</b> en Beaver Stadium. Primer intento universitario de Jorge, desde 52 yardas: <b>la metió</b>, pero Penn State había pedido tiempo muerto para enfriarle y no contó. La repetición no entró.</span><span class="l-en"><b>108,489 fans</b> at Beaver Stadium. Jorge's first college attempt, from 52 yards: <b>he made it</b>, but Penn State had called timeout to ice him and it didn't count. The retry was no good.</span></p>
         <a href="https://herdzone.com/sports/football/stats/2026/-18-penn-state/boxscore/11540" target="_blank" rel="noopener"><span class="l-es">Acta oficial del partido</span><span class="l-en">Official box score</span> ↗</a>
       </div>
     </div>
@@ -631,13 +719,13 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
     </div>
 
     <div class="verified-head rv">
-      <div><span class="label"><span class="l-es">Temporada actual · Marshall 2026</span><span class="l-en">Current season · Marshall 2026</span></span><h3 class="display"><span class="l-es">Ya suma puntos en la FBS</span><span class="l-en">Already scoring in the FBS</span></h3></div>
-      <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 22 sep. 2026</span><span class="l-en">Official stats · Sep 22, 2026</span> ↗</a>
+      <div><span class="label"><span class="l-es">Temporada actual · Marshall 2026</span><span class="l-en">Current season · Marshall 2026</span></span><h3 class="display"><span class="l-es">Ya gana partidos en la FBS</span><span class="l-en">Already winning games in the FBS</span></h3></div>
+      <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 27 sep. 2026</span><span class="l-en">Official stats · Sep 27, 2026</span> ↗</a>
     </div>
     <div class="verified-grid rv">
-      <div><b>3/4</b><span>Field goals</span></div>
-      <div><b>7/7</b><span><span class="l-es">Puntos extra</span><span class="l-en">Extra points</span></span></div>
-      <div><b>16</b><span><span class="l-es">Puntos anotados</span><span class="l-en">Points scored</span></span></div>
+      <div><b>6/8</b><span>Field goals</span></div>
+      <div><b>10/10</b><span><span class="l-es">Puntos extra</span><span class="l-en">Extra points</span></span></div>
+      <div><b>28</b><span><span class="l-es">Puntos anotados</span><span class="l-en">Points scored</span></span></div>
     </div>
 
     <div class="rv">
@@ -678,7 +766,9 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <div class="scout-col rv">
         <h4 class="sc-h ok"><span class="l-es">✓ Fortalezas demostradas</span><span class="l-en">✓ Proven strengths</span></h4>
         <ul class="sc-list ok-list">
-          <li><span class="l-es"><b>Potencia excepcional</b> — FG de 53 yd en instituto, 60 yd en entrenamiento</span><span class="l-en"><b>Exceptional leg power</b> — 53-yd FG in high school, 60 yd in practice</span></li>
+          <li><span class="l-es"><b>Sangre fría</b> — field goal ganador de 32 yd a 3 segundos del final ante Gardner-Webb (26-sep-2026), tras un tiempo muerto para enfriarle</span><span class="l-en"><b>Ice in his veins</b> — 32-yd game-winning field goal with 3 seconds left vs. Gardner-Webb (Sep 26, 2026), after a timeout to ice him</span></li>
+          <li><span class="l-es"><b>Potencia excepcional</b> — FG de 54 yd en partido oficial de la FBS; 53 yd en instituto y 60 yd en entrenamiento</span><span class="l-en"><b>Exceptional leg power</b> — 54-yd FG in an official FBS game; 53 yd in high school and 60 yd in practice</span></li>
+          <li><span class="l-es"><b>Hecho para los grandes escenarios</b> — debut ante 108.489 espectadores en Penn State, en directo en TV nacional</span><span class="l-en"><b>Built for the big stage</b> — debut in front of 108,489 fans at Penn State, live on national TV</span></li>
           <li><span class="l-es"><b>Versatilidad completa</b> — field goals, kickoffs y punts</span><span class="l-en"><b>Complete versatility</b> — field goals, kickoffs and punts</span></li>
           <li><span class="l-es"><b>Presencia física</b> — 1,93 m / 103 kg según la ficha de Marshall</span><span class="l-en"><b>Physical presence</b> — 6'4" / 228 lb according to Marshall's roster</span></li>
           <li><span class="l-es"><b>Kickoff charting de élite</b> — 110–117 pts Kohl's, distancia media ~74 yd</span><span class="l-en"><b>Elite kickoff charting</b> — 110–117 Kohl's pts, ~74 yd average distance</span></li>
@@ -692,16 +782,15 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
         <h4 class="sc-h todo"><span class="l-es">○ Próximos retos</span><span class="l-en">○ Next challenges</span></h4>
         <ul class="sc-list todo-list">
           <li><span class="l-es">Mantener la eficacia en field goals a lo largo de toda la temporada <b>FBS</b></span><span class="l-en">Sustain field-goal accuracy across a full <b>FBS</b> season</span></li>
-          <li><span class="l-es">Patadas decisivas con el partido en juego a nivel universitario</span><span class="l-en">Clutch kicks with the game on the line at the college level</span></li>
-          <li><span class="l-es">Ejecución bajo máxima presión (TV, estadio lleno)</span><span class="l-en">Execution under maximum pressure (TV, packed stadium)</span></li>
-          <li><span class="l-es">Seguir aportando puntos a <b>Marshall</b> y ampliar su rango de golpeo</span><span class="l-en">Keep scoring for <b>Marshall</b> and extend his field-goal range</span></li>
+          <li><span class="l-es">Field goals de <b>50+ yardas</b> con regularidad (1 de 2 en 2026)</span><span class="l-en">Hitting <b>50+ yard</b> field goals consistently (1 for 2 in 2026)</span></li>
+          <li><span class="l-es">Seguir aportando puntos a <b>Marshall</b> en la Sun Belt</span><span class="l-en">Keep scoring for <b>Marshall</b> in the Sun Belt</span></li>
           <li><span class="l-es">Consistencia bajo condiciones climáticas adversas</span><span class="l-en">Consistency in adverse weather conditions</span></li>
         </ul>
       </div>
     </div>
     <div class="projection rv">
       <h4><span class="l-es">📊 Proyección general</span><span class="l-en">📊 Overall projection</span></h4>
-      <p><span class="l-es">Tras los reconocimientos de instituto en Maryland, Jorge ya suma puntos oficiales con <b>Marshall</b>. Su siguiente medida será la consistencia durante una temporada completa de la <b>FBS</b>. Su aspiración de llegar a la NFL sigue siendo un objetivo a largo plazo.</span><span class="l-en">After his high school honors in Maryland, Jorge is now scoring official points for <b>Marshall</b>. The next measure is consistency over a full <b>FBS</b> season. His NFL ambition remains a long-term goal.</span></p>
+      <p><span class="l-es">Tras los reconocimientos de instituto en Maryland, Jorge ya suma puntos oficiales con <b>Marshall</b>: 28 en cuatro partidos, un field goal de 54 yardas y el <b>field goal ganador</b> ante Gardner-Webb. Su siguiente medida será la consistencia durante una temporada completa de la <b>FBS</b>. Su aspiración de llegar a la NFL sigue siendo un objetivo a largo plazo.</span><span class="l-en">After his high school honors in Maryland, Jorge is now scoring official points for <b>Marshall</b>: 28 in four games, a 54-yard field goal and the <b>game-winner</b> against Gardner-Webb. The next measure is consistency over a full <b>FBS</b> season. His NFL ambition remains a long-term goal.</span></p>
     </div>
   </div>
 </section>
@@ -720,6 +809,10 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
         <blockquote><p><span class="l-es">«Es un arma absoluta. Cada vez que nos acercamos a la yarda 30, podemos sumar puntos.»</span><span class="l-en">"It's an absolute weapon. Any time we get close to the 30-yard line, we can score points."</span></p><cite>Coach Mike Rich · The Frederick News-Post</cite></blockquote>
         <p style="color:var(--soft);margin:0 0 6px"><span class="l-es">Sus padres se levantaban <b style="color:#fff">a las 3 de la madrugada en Madrid</b> para ver sus partidos en directo. Lee las historias completas:</span><span class="l-en">His parents woke up <b style="color:#fff">at 3 a.m. in Madrid</b> to watch his games live. Read the full stories:</span></p>
         <div class="press-cards">
+          <a class="pcard" href="https://abcnews.com/Sports/wireStory/jorge-diaz-nicolas-field-goal-final-seconds-lifts-136789968" target="_blank" rel="noopener">
+            <div><div class="src"><span class="l-es">Associated Press · 26 sep. 2026</span><span class="l-en">Associated Press · Sep 26, 2026</span></div><h5><span class="l-es">El field goal de Jorge Díaz Nicolás en los últimos segundos da la victoria a Marshall (36-35)</span><span class="l-en">Jorge Diaz Nicolas' field goal in final seconds lifts Marshall over Gardner-Webb 36-35</span></h5></div><span class="arrow">↗</span></a>
+          <a class="pcard" href="https://wvmetronews.com/2026/09/26/marshall-survives-scare-nips-gardner-webb-36-35/" target="_blank" rel="noopener">
+            <div><div class="src"><span class="l-es">WV MetroNews · 26 sep. 2026</span><span class="l-en">WV MetroNews · Sep 26, 2026</span></div><h5><span class="l-es">Marshall sobrevive al susto y gana a Gardner-Webb 36-35</span><span class="l-en">Marshall survives scare, nips Gardner-Webb, 36-35</span></h5></div><span class="arrow">↗</span></a>
           <a class="pcard" href="https://www.dazn.com/es-ES/news/f%C3%BAtbol-americano/jorge-diaz-nicolas-inspiradora-historia-espanol-lucha-llegar-nfl-no-tener-beca-kicker-universidad-virginia/id10m3nsikmg1je7scrds0v1k" target="_blank" rel="noopener">
             <div><div class="src">DAZN España</div><h5><span class="l-es">La inspiradora historia del español que lucha por llegar a la NFL</span><span class="l-en">The inspiring story of the Spaniard fighting to reach the NFL</span></h5></div><span class="arrow">↗</span></a>
           <a class="pcard" href="https://herdzone.com/sports/football/roster/jorge-diaz-nicolas/11166" target="_blank" rel="noopener">
@@ -749,7 +842,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <div class="tnode rv"><div class="dot"></div><div class="yr">2023</div><h4>Catoctin High School · Maryland</h4><p><span class="l-es">Estudiante de intercambio. Descubre el football, se convierte en kicker titular y lleva a los Cougars a playoffs. Reportaje en The Frederick News-Post.</span><span class="l-en">Exchange student. Discovers football, becomes the starting kicker and leads the Cougars to the playoffs. Featured in The Frederick News-Post.</span></p><span class="tag"><span class="l-es">El arma secreta</span><span class="l-en">The secret weapon</span></span></div>
       <div class="tnode rv"><div class="dot"></div><div class="yr">2024</div><h4>Saint James School · Maryland</h4><p><span class="l-es">Año senior en un programa preparatorio de élite. Récord de 53 yardas, 45 touchbacks, doble premio WCAA y 5 estrellas en Kohl's.</span><span class="l-en">Senior year at an elite prep program. A 53-yard record, 45 touchbacks, two WCAA awards and 5 stars at Kohl's.</span></p><span class="tag">All-State · 5★</span></div>
       <div class="tnode rv"><div class="dot"></div><div class="yr">2025</div><h4>University of Virginia · ACC</h4><p><span class="l-es">Ingresa en una de las mejores universidades públicas del país, con el dorsal #92. Entrena en la élite de la Atlantic Coast Conference.</span><span class="l-en">Joins one of the country's top public universities, wearing #92. Trains among the elite of the Atlantic Coast Conference.</span></p><span class="tag"><span class="l-es">NCAA División I</span><span class="l-en">NCAA Division I</span></span></div>
-      <div class="tnode rv"><div class="dot"></div><div class="yr">2026</div><h4>Marshall University · Thundering Herd</h4><p><span class="l-es">Llega a la Sun Belt Conference con el dorsal #41. En septiembre anota sus primeros field goals universitarios y suma 16 puntos en tres partidos.</span><span class="l-en">Joins the Sun Belt Conference wearing #41. In September he scores his first college field goals and totals 16 points in three games.</span></p><span class="tag"><span class="l-es">NCAA D-I FBS · actualidad</span><span class="l-en">NCAA D-I FBS · present day</span></span></div>
+      <div class="tnode rv"><div class="dot"></div><div class="yr">2026</div><h4>Marshall University · Thundering Herd</h4><p><span class="l-es">Llega a la Sun Belt Conference con el dorsal #41. Debuta el 5 de septiembre en Penn State ante 108.489 espectadores, logra sus primeros field goals en Missouri State (3 de 3) y el 26 de septiembre da la victoria a Marshall ante Gardner-Webb con un field goal a 3 segundos del final. 28 puntos en cuatro partidos.</span><span class="l-en">Joins the Sun Belt Conference wearing #41. Debuts on September 5 at Penn State in front of 108,489 fans, makes his first field goals at Missouri State (3 for 3) and on September 26 wins it for Marshall against Gardner-Webb with a field goal with 3 seconds left. 28 points in four games.</span></p><span class="tag"><span class="l-es">NCAA D-I FBS · actualidad</span><span class="l-en">NCAA D-I FBS · present day</span></span></div>
     </div>
   </div>
 </section>
@@ -864,7 +957,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
     <div class="brand"><span class="flag"><i></i><i></i><i></i></span> EL&nbsp;KICKER&nbsp;<b>ESPAÑOL</b></div>
     <div>Jorge Díaz Nicolás · Marshall #41 · NCAA D-I FBS · Sun Belt · <a href="https://www.instagram.com/jorge__diiazz" target="_blank" rel="noopener">@jorge__diiazz</a> · <a href="https://x.com/Jorgejrkicker" target="_blank" rel="noopener">𝕏 @Jorgejrkicker</a></div>
   </div>
-  <div class="wrap"><p class="discreet"><span class="l-es">Web de marca personal con fines informativos y promocionales. Imágenes y datos cedidos por la familia. Prensa: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports.</span><span class="l-en">Personal-brand site for informational and promotional purposes. Images and data provided by the family. Press: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports.</span></p></div>
+  <div class="wrap"><p class="discreet"><span class="l-es">Web de marca personal con fines informativos y promocionales. Imágenes y datos cedidos por la familia. Prensa: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports, Associated Press, WV MetroNews, Marshall Athletics. Estadísticas 2026: datos oficiales de Marshall a 27-sep-2026.</span><span class="l-en">Personal-brand site for informational and promotional purposes. Images and data provided by the family. Press: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports, Associated Press, WV MetroNews, Marshall Athletics. 2026 stats: official Marshall figures as of Sep 27, 2026.</span></p></div>
 </footer>
 
 <script async src="//www.instagram.com/embed.js"></script>
