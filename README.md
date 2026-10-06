@@ -4,7 +4,7 @@ Landing bilingüe de Jorge Díaz Nicolás. Es un sitio estático: GitHub Pages s
 
 ## Contenido actual
 
-La portada presenta a Jorge como kicker #41 de Marshall University, en la NCAA División I FBS y la Sun Belt Conference. Los datos de 2026 (6/8 field goals, 10/10 puntos extra, 28 puntos y máximo de 54 yardas) están fechados al **27 de septiembre de 2026**. Antes de actualizar estos números, comprueba las [estadísticas oficiales de Marshall](https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf). La [ficha oficial del jugador](https://herdzone.com/sports/football/roster/jorge-diaz-nicolas/11166) confirma equipo, dorsal y medidas.
+La portada presenta a Jorge como kicker #41 de Marshall University, en la NCAA División I FBS y la Sun Belt Conference. Los datos de 2026 (7/9 field goals, 12/12 puntos extra, 33 puntos y máximo de 54 yardas) están fechados al **3 de octubre de 2026**, tras el partido en James Madison (17–45). Antes de actualizar estos números, comprueba las [estadísticas oficiales de Marshall](https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf). La [ficha oficial del jugador](https://herdzone.com/sports/football/roster/jorge-diaz-nicolas/11166) confirma equipo, dorsal y medidas.
 
 La portada recupera la fotografía en blanco y negro de la etapa de Virginia (`assets/hero-bw.jpg`) y la composición a pantalla completa. `assets/classic-cover.css` mantiene esta presentación con el contenido actual de Marshall.
 
@@ -23,3 +23,5 @@ Para previsualizar los cambios en local, sirve la carpeta raíz con un servidor 
 La sección **Temporada 2026** (`#temporada`) resume el partido Marshall 36–35 Gardner-Webb (26-09-2026, FG ganador de 32 yardas a 3 s del final y FG de 54 yardas), las fichas de los cuatro primeros partidos y 10 fotos de septiembre. `assets/gw-winner.mp4` (aprox. 12 MB) es una copia H.264/AAC 720p de la grabación facilitada. Las fotos se publican sin metadatos EXIF/GPS. Fuentes: [acta oficial](https://herdzone.com/documents/download/2026/9/26/47912.PDF), [AP](https://abcnews.com/Sports/wireStory/jorge-diaz-nicolas-field-goal-final-seconds-lifts-136789968) y [WV MetroNews](https://wvmetronews.com/2026/09/26/marshall-survives-scare-nips-gardner-webb-36-35/).
 
 El material bruto (`Fotos Videos/`) está excluido del repositorio en `.gitignore`.
+
+`assets/gw-hype.mp4` (aprox. 19 MB, 1060×596, 30 fps) es el vídeo resumen de Marshall del partido ante Gardner-Webb, recortado para eliminar el contador de «me gusta» de la grabación de pantalla. La sección muestra también el próximo partido (vs. Coastal Carolina, 10-10-2026, 19:00 ET, ESPN+): **revisar tras cada jornada**.
