@@ -20,7 +20,7 @@ El vídeo **Marshall–Penn State** muestra el primer intento universitario de f
 
 Para previsualizar los cambios en local, sirve la carpeta raíz con un servidor HTTP estático y abre `index.html` en el navegador.
 
-La sección **Temporada 2026** (`#temporada`) resume el partido Marshall 36–35 Gardner-Webb (26-09-2026, FG ganador de 32 yardas a 3 s del final y FG de 54 yardas), las fichas de los cuatro primeros partidos y 10 fotos de septiembre. `assets/gw-winner.mp4` (aprox. 12 MB) es una copia H.264/AAC 720p de la grabación facilitada. Las fotos se publican sin metadatos EXIF/GPS. Fuentes: [acta oficial](https://herdzone.com/documents/download/2026/9/26/47912.PDF), [AP](https://abcnews.com/Sports/wireStory/jorge-diaz-nicolas-field-goal-final-seconds-lifts-136789968) y [WV MetroNews](https://wvmetronews.com/2026/09/26/marshall-survives-scare-nips-gardner-webb-36-35/).
+La sección **Temporada 2026** (`#temporada`) resume el partido Marshall 36–35 Gardner-Webb (26-09-2026, FG ganador de 32 yardas a 3 s del final y FG de 54 yardas), las fichas de los cuatro primeros partidos y 10 fotos de septiembre. `assets/gw-winner.mp4` (aprox. 12 MB) es una copia H.264/AAC 720p de la grabación facilitada. Las fotos se publican sin metadatos EXIF/GPS. Fuentes: [acta oficial](https://herdzone.com/documents/download/2026/9/26/47912.PDF), [AP](https://sports.yahoo.com/articles/jorge-diaz-nicolas-field-goal-000157203.html) y [WV MetroNews](https://wvmetronews.com/2026/09/26/marshall-survives-scare-nips-gardner-webb-36-35/).
 
 El material bruto (`Fotos Videos/`) está excluido del repositorio en `.gitignore`.
 
