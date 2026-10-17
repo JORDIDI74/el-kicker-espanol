@@ -4,7 +4,7 @@ Landing bilingüe de Jorge Díaz Nicolás. Es un sitio estático: GitHub Pages s
 
 ## Contenido actual
 
-La portada presenta a Jorge como kicker #41 de Marshall University, en la NCAA División I FBS y la Sun Belt Conference. Los datos de 2026 (7/9 field goals, 12/12 puntos extra, 33 puntos y máximo de 54 yardas) están fechados al **3 de octubre de 2026**, tras el partido en James Madison (17–45). Antes de actualizar estos números, comprueba las [estadísticas oficiales de Marshall](https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf). La [ficha oficial del jugador](https://herdzone.com/sports/football/roster/jorge-diaz-nicolas/11166) confirma equipo, dorsal y medidas.
+La portada presenta a Jorge como kicker #41 de Marshall University, en la NCAA División I FBS y la Sun Belt Conference. Los datos de 2026 (7/9 field goals, 15/15 puntos extra, 36 puntos y máximo de 54 yardas) están fechados al **10 de octubre de 2026**, tras el partido contra Coastal Carolina (21–27). Antes de actualizar estos números, comprueba las [estadísticas oficiales de Marshall](https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf). La [ficha oficial del jugador](https://herdzone.com/sports/football/roster/jorge-diaz-nicolas/11166) confirma equipo, dorsal y medidas.
 
 La portada recupera la fotografía en blanco y negro de la etapa de Virginia (`assets/hero-bw.jpg`) y la composición a pantalla completa. `assets/classic-cover.css` mantiene esta presentación con el contenido actual de Marshall.
 
@@ -24,4 +24,4 @@ La sección **Temporada 2026** (`#temporada`) resume el partido Marshall 36–35
 
 El material bruto (`Fotos Videos/`) está excluido del repositorio en `.gitignore`.
 
-`assets/gw-hype.mp4` (aprox. 19 MB, 1060×596, 30 fps) es el vídeo resumen de Marshall del partido ante Gardner-Webb, recortado para eliminar el contador de «me gusta» de la grabación de pantalla. La sección muestra también el próximo partido (vs. Coastal Carolina, 10-10-2026, 19:00 ET, ESPN+): **revisar tras cada jornada**.
+`assets/gw-jorge.mp4` (aprox. 19 MB, 912×512, 30 fps, con sonido) es el montaje del partido ante Gardner-Webb centrado en Jorge, con repeticiones del field goal ganador; sustituye al vídeo resumen general de Marshall. La sección muestra también el próximo partido (vs. South Alabama, martes 20-10-2026, 19:30 ET, ESPN2): **revisar tras cada jornada**.
