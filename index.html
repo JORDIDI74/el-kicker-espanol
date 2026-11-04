@@ -449,6 +449,9 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
 @media(max-width:980px){.games{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.games{grid-template-columns:1fr}}
 .games{grid-template-columns:repeat(4,1fr)}
+.now-photo{display:block;width:100%;max-width:720px;padding:0;margin:0 0 22px;border:1px solid rgba(255,255,255,.28);border-radius:8px;overflow:hidden;background:#0b2b20;position:relative;box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}
+.now-photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.now-photo-cap{display:block;text-align:right;font:600 .62rem "Oswald",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#cfe0d3;background:#0b2b20;padding:7px 10px}
 .now-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:16px}
 .now-facts>span{display:flex;align-items:baseline;gap:8px;color:#dce9dc;font-size:.88rem}
 .now-facts b{font-family:"Anton";font-size:1.6rem;line-height:1;color:#fff;font-weight:400}
@@ -525,6 +528,7 @@ a.prize:hover{border-color:var(--gold);transform:translateY(-2px)}
   <div class="wrap now-grid">
     <div class="now-date"><span class="l-es">Ahora</span><span class="l-en">Now</span><b>2026</b></div>
     <div class="now-copy">
+      <button type="button" class="photo-trigger now-photo" data-photo="assets/groza-star.jpg"><img src="assets/groza-star.jpg" alt="Lou Groza Award · Star of the Week · Jorge Díaz Nicolás (Marshall #41)" width="1600" height="900"><span class="now-photo-cap"><span class="l-es">Foto: Marshall Athletics · toca para ampliar</span><span class="l-en">Photo: Marshall Athletics · tap to enlarge</span></span></button>
       <span class="label">Marshall · Thundering Herd</span>
       <h2 class="display"><span class="l-es">Récord histórico de Marshall: 5 de 5</span><span class="l-en">Marshall record: 5 for 5</span></h2>
       <p><span class="l-es">En más de 130 años de football de Marshall (desde 1895), nadie había metido cinco field goals en un partido: el récord era 4, logrado siete veces (la última, Lorcan Quinn en 2025). Jorge firmó un <b>5 de 5 perfecto</b> (35, 30, 34, 30 y 24 yardas) en el 36–23 en Old Dominion. Le valió entrar en las «Stars of the Week» del <b>Lou Groza Award</b>, el premio al mejor kicker de la División I (FBS) de todo EE. UU.</span><span class="l-en">In more than 130 years of Marshall football (since 1895), no one had ever made five field goals in a game: the record was 4, reached seven times (most recently by Lorcan Quinn in 2025). Jorge went a <b>perfect 5 for 5</b> (35, 30, 34, 30 and 24 yards) in the 36–23 win at Old Dominion, earning a «Star of the Week» nod from the <b>Lou Groza Award</b>, the honor for the best kicker in Division I (FBS).</span></p>
