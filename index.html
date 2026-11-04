@@ -455,6 +455,12 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
 .now-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:16px}
 .now-facts>span{display:flex;align-items:baseline;gap:8px;color:#dce9dc;font-size:.88rem}
 .now-facts b{font-family:"Anton";font-size:1.6rem;line-height:1;color:#fff;font-weight:400}
+.awards-wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:18px;align-items:start}
+.awards-wrap .prizes{grid-template-columns:repeat(2,1fr)!important}
+.mvp-photo{display:block;width:100%;padding:0;margin:0;border:1px solid rgba(234,193,106,.45);border-radius:8px;overflow:hidden;background:#0b2b20;box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}
+.mvp-photo img{display:block;width:100%;height:auto}
+@media(max-width:860px){.awards-wrap{grid-template-columns:1fr}.mvp-photo{max-width:440px;margin:0 auto}}
+@media(max-width:560px){.awards-wrap .prizes{grid-template-columns:1fr!important}}
 .prizes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .prize{position:relative;display:flex;flex-direction:column;gap:6px;background:linear-gradient(180deg,rgba(234,193,106,.12),var(--card) 70%);border:1px solid rgba(234,193,106,.45);border-radius:var(--r);padding:20px 20px 18px;color:inherit;transition:border-color .2s,transform .2s}
 a.prize:hover{border-color:var(--gold);transform:translateY(-2px)}
@@ -559,11 +565,14 @@ a.prize:hover{border-color:var(--gold);transform:translateY(-2px)}
     </div>
 
     <div class="sub-h rv"><span class="l-es">Premios y récords 2026</span><span class="l-en">2026 awards & records</span></div>
+    <div class="awards-wrap">
+      <button type="button" class="photo-trigger mvp-photo rv" data-photo="assets/odu-mvp.jpg"><img src="assets/odu-mvp.jpg" alt="Special Teams MVP at Old Dominion: Xayvion Turner-Bradshaw (#5) y Jorge Díaz Nicolás (#41)" width="1033" height="1312" loading="lazy"><span class="now-photo-cap"><span class="l-es">Foto: Marshall Athletics · toca para ampliar</span><span class="l-en">Photo: Marshall Athletics · tap to enlarge</span></span></button>
     <div class="prizes">
       <a class="prize rv" href="https://herdzone.com/news/2026/11/3/football-marshall-kicker-jorge-diaz-nicolas-named-to-lou-groza-award-stars-of-the-week" target="_blank" rel="noopener"><span class="pz-ic">🏆</span><b>Lou Groza Award · Stars of the Week</b><span><span class="l-es">3 nov. 2026 · uno de solo tres kickers elegidos en todo el país esa semana para el premio al mejor kicker de la División I (FBS)</span><span class="l-en">Nov 3, 2026 · one of only three kickers named nationwide that week</span></span><i>↗</i></a>
       <a class="prize rv d1" href="https://herdzone.com/news/2026/10/31/marshall-football-rolls-past-old-dominion-36-23" target="_blank" rel="noopener"><span class="pz-ic">📜</span><b><span class="l-es">Récord histórico de Marshall</span><span class="l-en">Marshall all-time record</span></b><span><span class="l-es">31 oct. 2026 · primer jugador en más de 130 años de football de Marshall con 5 field goals en un partido (antes, el máximo era 4, logrado siete veces)</span><span class="l-en">Oct 31, 2026 · first player in 130-plus years of Marshall football with 5 field goals in a game (previous best: 4, reached seven times)</span></span><i>↗</i></a>
       <div class="prize rv d2"><span class="pz-ic">🥇</span><b><span class="l-es">Nº 1 de la Sun Belt en field goals</span><span class="l-en">No. 1 in the Sun Belt in field goals</span></b><span><span class="l-es">14 convertidos, 10º de toda la FBS (Marshall Athletics, 3 nov. 2026)</span><span class="l-en">14 made, 10th in all of FBS (Marshall Athletics, Nov 3, 2026)</span></span></div>
-      <div class="prize rv d3"><span class="pz-ic">⭐</span><b><span class="l-es">Estrella de equipos especiales</span><span class="l-en">Special teams star</span></b><span><span class="l-es">The HerdLine Podcast · partido ante Gardner-Webb (36–35)</span><span class="l-en">The HerdLine Podcast · Gardner-Webb game (36–35)</span></span></div>
+      <div class="prize rv d3"><span class="pz-ic">⭐</span><b>Special Teams MVP</b><span><span class="l-es">Marshall Athletics · elegido MVP de equipos especiales en Old Dominion (31 oct. 2026), junto a Xayvion Turner-Bradshaw</span><span class="l-en">Marshall Athletics · named special teams MVP at Old Dominion (Oct 31, 2026), alongside Xayvion Turner-Bradshaw</span></span></div>
+    </div>
     </div>
 
     <div class="kpis">
@@ -755,6 +764,7 @@ a.prize:hover{border-color:var(--gold);transform:translateY(-2px)}
     </div>
     <div class="award-grid">
       <div class="award rv"><div class="ic">🏆</div><h4>Lou Groza · Stars of the Week</h4><p><span class="l-es">Marshall, 2026 — tras su 5 de 5 en Old Dominion. El Lou Groza Award premia al mejor kicker de la División I (FBS) de todo EE. UU.</span><span class="l-en">Marshall, 2026 — after his 5-for-5 day at Old Dominion. The Lou Groza Award honors college football's best kicker.</span></p></div>
+      <div class="award rv d1"><div class="ic">⭐</div><h4>Special Teams MVP</h4><p><span class="l-es">Marshall, 2026 — MVP de equipos especiales en Old Dominion, junto a Xayvion Turner-Bradshaw.</span><span class="l-en">Marshall, 2026 — special teams MVP at Old Dominion, alongside Xayvion Turner-Bradshaw.</span></p></div>
       <div class="award rv d1"><div class="ic">📜</div><h4><span class="l-es">Récord de Marshall</span><span class="l-en">Marshall record</span></h4><p><span class="l-es">Primer jugador de la historia del club con 5 field goals en un partido (31-oct-2026).</span><span class="l-en">First player in school history with 5 field goals in a game (Oct 31, 2026).</span></p></div>
       <div class="award rv"><div class="ic">🎖️</div><h4>All-State Maryland</h4><p><span class="l-es">Seleccionado en el equipo All-State de Maryland como kicker.</span><span class="l-en">Selected to Maryland's All-State team as a kicker.</span></p></div>
       <div class="award rv"><div class="ic">🥇</div><h4>First Team All-MAC</h4><p><span class="l-es">Mid-Atlantic Athletic Conference — primer equipo.</span><span class="l-en">Mid-Atlantic Athletic Conference — first team.</span></p></div>
