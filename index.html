@@ -476,6 +476,20 @@ a.prize:hover{border-color:var(--gold);transform:translateY(-2px)}
 .next-game{margin:18px 0 0;padding:14px 18px;border:1px dashed var(--line2);border-radius:var(--r);color:var(--soft);font-size:.95rem}
 .next-game b{color:#fff}
 .gw-hype video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#000}
+.interviews{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.iv{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.iv-frame{position:relative;aspect-ratio:16/9;background:#000}
+.iv-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.iv-play{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:#000;cursor:pointer}
+.iv-play img{width:100%;height:100%;object-fit:cover;display:block}
+.iv-btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(228,0,43,.92);color:#fff;font-size:1.5rem;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.45);padding-left:4px}
+.iv-play:hover .iv-btn{transform:translate(-50%,-50%) scale(1.06)}
+.iv-tag{position:absolute;left:10px;top:10px;font:600 .62rem "Oswald",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(6,30,22,.78);padding:4px 8px;border-radius:4px}
+.iv-text{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px}
+.iv-text .gdate{font-family:"Oswald";text-transform:uppercase;letter-spacing:.12em;font-size:.66rem;color:var(--muted)}
+.iv-text p{margin:0;color:#fff;font-size:1rem;line-height:1.5}
+.iv-text a{font:600 .72rem "Oswald",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.interviews{grid-template-columns:1fr}}
 .sub-h{font-family:"Oswald";text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:600;color:var(--gold);margin:52px 0 16px}
 @media(max-width:560px){header .ig{display:none}}
 </style>
@@ -597,6 +611,18 @@ a.prize:hover{border-color:var(--gold);transform:translateY(-2px)}
 
     <div class="sub-h rv"><span class="l-es">Gardner-Webb · el field goal ganador, con repeticiones · activa el sonido 🔊</span><span class="l-en">Gardner-Webb · the game-winner, with replays · sound on 🔊</span></div>
     <div class="game-screen gw-hype rv"><video controls playsinline preload="none" poster="assets/poster-gw-jorge.jpg"><source src="assets/gw-jorge.mp4" type="video/mp4"></video></div>
+
+    <div class="sub-h rv"><span class="l-es">En sus palabras · ruedas de prensa oficiales de Marshall</span><span class="l-en">In his own words · official Marshall press conferences</span></div>
+    <div class="interviews">
+      <div class="iv rv">
+        <div class="iv-frame"><button type="button" class="iv-play" data-yt="tnuAmKj3xGk" data-start="255" aria-label="Reproducir la entrevista de Jorge tras Old Dominion"><img src="assets/iv-odu.jpg" alt="Reproducir la entrevista de Jorge tras Old Dominion" loading="lazy"><span class="iv-btn" aria-hidden="true">▶</span><span class="iv-tag"><span class="l-es">Rueda de prensa · Jorge</span><span class="l-en">Press conference · Jorge</span></span></button></div>
+        <div class="iv-text"><span class="gdate"><span class="l-es">31 oct. 2026 · tras el récord en Old Dominion</span><span class="l-en">Oct 31, 2026 · after the record at Old Dominion</span></span><p><span class="l-es">«Cada oportunidad que me da el ataque, estoy preparado. Parte de esos cinco field goals es mérito suyo, por ponerme en posición de hacerlo.»</span><span class="l-en">"Every opportunity that my offense gives me, I'm ready to go. Part of those five field goals is on them for putting me into position to perform."</span></p><a href="https://www.youtube.com/watch?v=tnuAmKj3xGk&t=255s" target="_blank" rel="noopener"><span class="l-es">Ver en YouTube (desde el minuto 4:15)</span><span class="l-en">Watch on YouTube (from 4:15)</span> ↗</a></div>
+      </div>
+      <div class="iv rv d1">
+        <div class="iv-frame"><button type="button" class="iv-play" data-yt="2IeNa4VPWic" data-start="150" aria-label="Reproducir la entrevista de Jorge tras Gardner-Webb"><img src="assets/iv-gw.jpg" alt="Reproducir la entrevista de Jorge tras Gardner-Webb" loading="lazy"><span class="iv-btn" aria-hidden="true">▶</span><span class="iv-tag"><span class="l-es">Rueda de prensa · Jorge</span><span class="l-en">Press conference · Jorge</span></span></button></div>
+        <div class="iv-text"><span class="gdate"><span class="l-es">26 sep. 2026 · tras el field goal ganador ante Gardner-Webb</span><span class="l-en">Sep 26, 2026 · after the game-winner vs. Gardner-Webb</span></span><p><span class="l-es">«Después del tiempo muerto me dije: ten confianza, y respiré hondo.»</span><span class="l-en">"After the timeout, I said be confident and did some deep breathing."</span></p><a href="https://www.youtube.com/watch?v=2IeNa4VPWic&t=150s" target="_blank" rel="noopener"><span class="l-es">Ver en YouTube (desde el minuto 2:30)</span><span class="l-en">Watch on YouTube (from 2:30)</span> ↗</a></div>
+      </div>
+    </div>
 
     <p class="src-note rv"><span class="l-es">Los vídeos de Penn State y Missouri State, en <a href="#video">Highlights ↓</a></span><span class="l-en">The Penn State and Missouri State videos are in <a href="#video">Highlights ↓</a></span></p>
 
@@ -1020,6 +1046,18 @@ document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
   document.querySelectorAll('.langsw button').forEach(function(b){b.addEventListener('click',function(){set(b.getAttribute('data-l'))})});
 })();</script>
 
+<script>(function(){
+  document.querySelectorAll('.iv-play').forEach(function(b){
+    b.addEventListener('click',function(){
+      var f=document.createElement('iframe');
+      f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?start='+b.dataset.start+'&autoplay=1&rel=0&playsinline=1';
+      f.title=b.getAttribute('aria-label');
+      f.allow='autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.referrerPolicy='strict-origin-when-cross-origin'; f.allowFullscreen=true;
+      b.replaceWith(f);
+    });
+  });
+})();</script>
 <script src="assets/photo-viewer.js"></script>
 </body>
 </html>
