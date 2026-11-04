@@ -448,7 +448,16 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
 .game p b{color:#fff}
 @media(max-width:980px){.games{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.games{grid-template-columns:1fr}}
-.games{grid-template-columns:repeat(3,1fr)}
+.games{grid-template-columns:repeat(4,1fr)}
+.prizes{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.prize{position:relative;display:flex;flex-direction:column;gap:6px;background:linear-gradient(180deg,rgba(234,193,106,.12),var(--card) 70%);border:1px solid rgba(234,193,106,.45);border-radius:var(--r);padding:20px 20px 18px;color:inherit;transition:border-color .2s,transform .2s}
+a.prize:hover{border-color:var(--gold);transform:translateY(-2px)}
+.prize .pz-ic{font-size:1.5rem;line-height:1}
+.prize b{font-family:"Oswald";text-transform:uppercase;letter-spacing:.03em;font-size:1rem;color:#fff;line-height:1.2}
+.prize>span:not(.pz-ic){color:var(--soft);font-size:.9rem;line-height:1.45}
+.prize i{position:absolute;top:16px;right:16px;font-style:normal;color:var(--gold)}
+@media(max-width:980px){.prizes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.prizes{grid-template-columns:1fr}}
 @media(max-width:980px){.games{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.games{grid-template-columns:1fr}}
 .gw-award{margin:16px 0 0!important;font-size:.95rem!important}
@@ -494,11 +503,11 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
         <a class="btn btn-ghost" href="#temporada"><span class="l-es">★ Temporada 2026</span><span class="l-en">★ 2026 season</span></a>
       </div>
       <div class="hero-mini">
-        <div><b>7/9<small> FG</small></b><span><span class="l-es">Marshall · 10 oct. 2026</span><span class="l-en">Marshall · Oct 10, 2026</span></span></div>
+        <div><b>14/18<small> FG</small></b><span><span class="l-es">Nº 1 Sun Belt · 31 oct.</span><span class="l-en">No. 1 Sun Belt · Oct 31</span></span></div>
         <div><b>54<small> yd</small></b><span><span class="l-es">Su FG más largo · NCAA</span><span class="l-en">Career long · NCAA</span></span></div>
         <div><b>D-I<small> FBS</small></b><span>Sun Belt Conference</span></div>
       </div>
-      <a class="hero-source" href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 10 oct. 2026</span><span class="l-en">Official stats · Oct 10, 2026</span> ↗</a>
+      <a class="hero-source" href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 31 oct. 2026</span><span class="l-en">Official stats · Oct 31, 2026</span> ↗</a>
     </div>
   </div>
   <div class="hero-right">
@@ -514,10 +523,10 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
     <div class="now-date"><span class="l-es">Ahora</span><span class="l-en">Now</span><b>2026</b></div>
     <div class="now-copy">
       <span class="label">Marshall · Thundering Herd</span>
-      <h2 class="display"><span class="l-es">36–35: su primer field goal ganador</span><span class="l-en">36–35: his first game-winner</span></h2>
-      <p><span class="l-es">Marshall 36, Gardner-Webb 35: field goal de 32 yardas a 3 segundos del final. Esa noche también metió uno de 54, el más largo de su carrera.</span><span class="l-en">Marshall 36, Gardner-Webb 35: a 32-yard field goal with 3 seconds left. That night he also hit a 54-yarder, the longest of his career.</span></p>
+      <h2 class="display"><span class="l-es">Récord histórico de Marshall: 5 de 5</span><span class="l-en">Marshall record: 5 for 5</span></h2>
+      <p><span class="l-es">Primer jugador en la historia de Marshall con cinco field goals en un partido (36–23 en Old Dominion). Elegido en las «Stars of the Week» del <b>Lou Groza Award</b>, el gran premio al kicker universitario.</span><span class="l-en">The first player in Marshall history with five field goals in a game (36–23 at Old Dominion). Named a <b>Lou Groza Award</b> «Star of the Week», college football's top kicking award.</span></p>
     </div>
-    <a class="now-link" href="#temporada"><span class="l-es">Ver el vídeo</span><span class="l-en">Watch the video</span><span aria-hidden="true">↓</span></a>
+    <a class="now-link" href="#temporada"><span class="l-es">Ver la temporada</span><span class="l-en">See the season</span><span aria-hidden="true">↓</span></a>
   </div>
 </section>
 
@@ -527,7 +536,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
     <div class="sec-head rv">
       <span class="live-chip"><i></i><span class="l-es">Temporada 2026 · Marshall #41</span><span class="l-en">2026 season · Marshall #41</span></span>
       <h2 class="display"><span class="l-es">El field goal que ganó el partido</span><span class="l-en">The kick that won the game</span></h2>
-      <p><span class="l-es">Sus primeros partidos en la FBS: debut ante más de 100.000 personas, sus primeros field goals en la NCAA y, en Homecoming, la patada que dio la victoria a Marshall.</span><span class="l-en">His first FBS games: a debut in front of 100,000-plus fans, his first NCAA field goals and, at Homecoming, the kick that won it for Marshall.</span></p>
+      <p><span class="l-es">Su primera temporada en la FBS: debut ante más de 100.000 personas, el field goal que ganó el partido de Homecoming y un récord histórico de Marshall con 5 de 5 en Old Dominion.</span><span class="l-en">His first FBS season: a debut in front of 100,000-plus fans, the Homecoming game-winner and a Marshall record 5 for 5 at Old Dominion.</span></p>
     </div>
 
     <div class="gw rv d1">
@@ -541,13 +550,21 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       </div>
     </div>
 
+    <div class="sub-h rv"><span class="l-es">Premios y récords 2026</span><span class="l-en">2026 awards & records</span></div>
+    <div class="prizes">
+      <a class="prize rv" href="https://herdzone.com/news/2026/11/3/football-marshall-kicker-jorge-diaz-nicolas-named-to-lou-groza-award-stars-of-the-week" target="_blank" rel="noopener"><span class="pz-ic">🏆</span><b>Lou Groza Award · Stars of the Week</b><span><span class="l-es">3 nov. 2026 · uno de solo tres kickers elegidos en todo el país esa semana</span><span class="l-en">Nov 3, 2026 · one of only three kickers named nationwide that week</span></span><i>↗</i></a>
+      <a class="prize rv d1" href="https://herdzone.com/news/2026/10/31/marshall-football-rolls-past-old-dominion-36-23" target="_blank" rel="noopener"><span class="pz-ic">📜</span><b><span class="l-es">Récord histórico de Marshall</span><span class="l-en">Marshall all-time record</span></b><span><span class="l-es">31 oct. 2026 · primer jugador del club con 5 field goals en un partido (antes, el máximo era 4)</span><span class="l-en">Oct 31, 2026 · first player in school history with 5 field goals in a game (previous best: 4)</span></span><i>↗</i></a>
+      <div class="prize rv d2"><span class="pz-ic">🥇</span><b><span class="l-es">Nº 1 de la Sun Belt en field goals</span><span class="l-en">No. 1 in the Sun Belt in field goals</span></b><span><span class="l-es">14 convertidos, 10º de toda la FBS (Marshall Athletics, 3 nov. 2026)</span><span class="l-en">14 made, 10th in all of FBS (Marshall Athletics, Nov 3, 2026)</span></span></div>
+      <div class="prize rv d3"><span class="pz-ic">⭐</span><b><span class="l-es">Estrella de equipos especiales</span><span class="l-en">Special teams star</span></b><span><span class="l-es">The HerdLine Podcast · partido ante Gardner-Webb (36–35)</span><span class="l-en">The HerdLine Podcast · Gardner-Webb game (36–35)</span></span></div>
+    </div>
+
     <div class="kpis">
       <div class="kpi rv d1"><b><span data-count="54">0</span><small> yd</small></b><span><span class="l-es">FG más largo de su carrera</span><span class="l-en">Career-long field goal</span></span></div>
-      <div class="kpi rv d2"><b>7/9</b><span><span class="l-es">Field goals en 2026</span><span class="l-en">Field goals in 2026</span></span></div>
-      <div class="kpi rv d3"><b>15/15</b><span><span class="l-es">Puntos extra · 100%</span><span class="l-en">Extra points · 100%</span></span></div>
-      <div class="kpi rv d4"><b data-count="36">0</b><span><span class="l-es">Puntos en 6 partidos</span><span class="l-en">Points in 6 games</span></span></div>
+      <div class="kpi rv d2"><b>14/18</b><span><span class="l-es">Field goals · nº 1 Sun Belt</span><span class="l-en">Field goals · No. 1 Sun Belt</span></span></div>
+      <div class="kpi rv d3"><b>20/20</b><span><span class="l-es">Puntos extra · 100%</span><span class="l-en">Extra points · 100%</span></span></div>
+      <div class="kpi rv d4"><b data-count="62">0</b><span><span class="l-es">Puntos en 8 partidos</span><span class="l-en">Points in 8 games</span></span></div>
     </div>
-    <span class="src-note"><span class="l-es">Fuente: <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener">estadísticas oficiales de Marshall</a> y ESPN · datos a 10-oct-2026.</span><span class="l-en">Source: <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener">official Marshall statistics</a> and ESPN · as of Oct 10, 2026.</span></span>
+    <span class="src-note"><span class="l-es">Fuente: <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener">estadísticas oficiales de Marshall</a> y ESPN · datos a 31-oct-2026.</span><span class="l-en">Source: <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener">official Marshall statistics</a> and ESPN · as of Oct 31, 2026.</span></span>
 
     <div class="games">
       <div class="game rv"><span class="gdate"><span class="l-es">5 sep · visitante</span><span class="l-en">Sep 5 · away</span></span><h4>@ #18 Penn State</h4><div class="res l">0–45</div><p><span class="l-es"><b>El debut.</b> Primer intento de su carrera, de <b>52 yardas</b>, ante <b>108.489</b> espectadores y en directo en FOX (FS1). <b>La metió</b>, pero Penn State había pedido tiempo muerto para enfriarle y no contó; la repetición no entró.</span><span class="l-en"><b>The debut.</b> The first attempt of his career, from <b>52 yards</b>, in front of <b>108,489</b> fans, live on FOX (FS1). <b>He made it</b>, but Penn State had called timeout to ice him and it didn't count; the retry was no good.</span></p></div>
@@ -556,8 +573,10 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <div class="game star rv d3"><span class="gdate"><span class="l-es">26 sep · Homecoming (domingo 27 en España)</span><span class="l-en">Sep 26 · Homecoming</span></span><h4>vs. Gardner-Webb</h4><div class="res w">36–35</div><p><span class="l-es"><b>3 de 4:</b> 54 yardas (récord personal), 21 y el <b>field goal ganador de 32</b> a 3 segundos del final. 25.710 espectadores.</span><span class="l-en"><b>3 for 4:</b> 54 yards (career long), 21, and the <b>32-yard game-winner</b> with 3 seconds left. 25,710 fans.</span></p></div>
       <div class="game rv d4"><span class="gdate"><span class="l-es">3 oct · visitante</span><span class="l-en">Oct 3 · away</span></span><h4>@ James Madison</h4><div class="res l">17–45</div><p><span class="l-es">Derrota ante un James Madison invicto (5-0). Jorge, <b>perfecto</b>: field goal de 27 yardas y 2 de 2 en puntos extra.</span><span class="l-en">A loss to unbeaten James Madison (5-0). Jorge was <b>perfect</b>: a 27-yard field goal and 2 for 2 on extra points.</span></p></div>
       <div class="game rv"><span class="gdate"><span class="l-es">10 oct · en casa</span><span class="l-en">Oct 10 · home</span></span><h4>vs. Coastal Carolina</h4><div class="res l">21–27</div><p><span class="l-es">Remontada que se quedó corta tras ir 0-27. Jorge, <b>3 de 3</b> en puntos extra; sin intentos de field goal. 23.029 espectadores.</span><span class="l-en">A comeback that fell short after trailing 0-27. Jorge went <b>3 for 3</b> on extra points; no field goal attempts. 23,029 fans.</span></p></div>
+      <div class="game rv"><span class="gdate"><span class="l-es">20 oct · en casa · ESPN2</span><span class="l-en">Oct 20 · home · ESPN2</span></span><h4>vs. South Alabama</h4><div class="res w">20–13</div><p><span class="l-es">Victoria en martes noche y en televisión nacional ante un rival invicto en la Sun Belt. Jorge mete field goals de <b>47 y 48 yardas</b> y 2 de 2 en puntos extra.</span><span class="l-en">A Tuesday-night win on national TV against a team unbeaten in Sun Belt play. Jorge hits field goals from <b>47 and 48 yards</b> and goes 2 for 2 on extra points.</span></p></div>
+      <div class="game star rv"><span class="gdate"><span class="l-es">31 oct · visitante</span><span class="l-en">Oct 31 · away</span></span><h4>@ Old Dominion</h4><div class="res w">36–23</div><p><span class="l-es"><b>5 de 5 en field goals</b> (35, 30, 34, 30 y 24 yardas): <b>récord histórico de Marshall</b>. Le vale entrar en las «Stars of the Week» del Lou Groza Award.</span><span class="l-en"><b>5 for 5 on field goals</b> (35, 30, 34, 30 and 24 yards): a <b>Marshall all-time record</b>. It earns him a Lou Groza Award «Star of the Week» nod.</span></p></div>
     </div>
-    <p class="next-game rv"><span class="l-es">Próximo partido: <b>Marshall vs. South Alabama</b> · martes 20 de octubre, 19:30 en Huntington, en directo en <b>ESPN2</b> para todo EE. UU. (<b>miércoles 21 a la 1:30 en España</b>).</span><span class="l-en">Next game: <b>Marshall vs. South Alabama</b> · Tuesday, October 20, 7:30 p.m. ET in Huntington, live nationally on <b>ESPN2</b>.</span></p>
+    <p class="next-game rv"><span class="l-es">Próximo partido: <b>Georgia Southern vs. Marshall</b> · sábado 7 de noviembre, 15:30 en Statesboro (Georgia), en ESPN+ (<b>21:30 en España</b>).</span><span class="l-en">Next game: <b>Marshall at Georgia Southern</b> · Saturday, November 7, 3:30 p.m. ET in Statesboro, Ga., on ESPN+.</span></p>
 
     <div class="sub-h rv"><span class="l-es">Gardner-Webb · el field goal ganador, con repeticiones · activa el sonido 🔊</span><span class="l-en">Gardner-Webb · the game-winner, with replays · sound on 🔊</span></div>
     <div class="game-screen gw-hype rv"><video controls playsinline preload="none" poster="assets/poster-gw-jorge.jpg"><source src="assets/gw-jorge.mp4" type="video/mp4"></video></div>
@@ -727,6 +746,8 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <button type="button" class="photo-trigger"  data-photo="assets/award-powerhour.jpg"><img src="assets/award-powerhour.jpg" alt="Virginia Football — Power Hour 2025, Most Improved Squat +42,5%"></button>
     </div>
     <div class="award-grid">
+      <div class="award rv"><div class="ic">🏆</div><h4>Lou Groza · Stars of the Week</h4><p><span class="l-es">Marshall, 2026 — tras su 5 de 5 en Old Dominion. El Lou Groza Award premia al mejor kicker universitario del país.</span><span class="l-en">Marshall, 2026 — after his 5-for-5 day at Old Dominion. The Lou Groza Award honors college football's best kicker.</span></p></div>
+      <div class="award rv d1"><div class="ic">📜</div><h4><span class="l-es">Récord de Marshall</span><span class="l-en">Marshall record</span></h4><p><span class="l-es">Primer jugador de la historia del club con 5 field goals en un partido (31-oct-2026).</span><span class="l-en">First player in school history with 5 field goals in a game (Oct 31, 2026).</span></p></div>
       <div class="award rv"><div class="ic">🎖️</div><h4>All-State Maryland</h4><p><span class="l-es">Seleccionado en el equipo All-State de Maryland como kicker.</span><span class="l-en">Selected to Maryland's All-State team as a kicker.</span></p></div>
       <div class="award rv"><div class="ic">🥇</div><h4>First Team All-MAC</h4><p><span class="l-es">Mid-Atlantic Athletic Conference — primer equipo.</span><span class="l-en">Mid-Atlantic Athletic Conference — first team.</span></p></div>
       <div class="award rv d1"><div class="ic">⭐⭐⭐⭐⭐</div><h4><span class="l-es">Kohl's · 5 estrellas</span><span class="l-en">Kohl's · 5 stars</span></h4><p><span class="l-es">Entre los especialistas más prometedores del país.</span><span class="l-en">Among the most promising specialists in the country.</span></p></div>
@@ -735,12 +756,12 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
 
     <div class="verified-head rv">
       <div><span class="label"><span class="l-es">Temporada actual · Marshall 2026</span><span class="l-en">Current season · Marshall 2026</span></span><h3 class="display"><span class="l-es">Ya gana partidos en la FBS</span><span class="l-en">Already winning games in the FBS</span></h3></div>
-      <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 10 oct. 2026</span><span class="l-en">Official stats · Oct 10, 2026</span> ↗</a>
+      <a href="https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/herdzone.com/stats/football/2026/pdf/cume.pdf" target="_blank" rel="noopener"><span class="l-es">Estadísticas oficiales · 31 oct. 2026</span><span class="l-en">Official stats · Oct 31, 2026</span> ↗</a>
     </div>
     <div class="verified-grid rv">
-      <div><b>7/9</b><span>Field goals</span></div>
-      <div><b>15/15</b><span><span class="l-es">Puntos extra</span><span class="l-en">Extra points</span></span></div>
-      <div><b>36</b><span><span class="l-es">Puntos anotados</span><span class="l-en">Points scored</span></span></div>
+      <div><b>14/18</b><span>Field goals</span></div>
+      <div><b>20/20</b><span><span class="l-es">Puntos extra</span><span class="l-en">Extra points</span></span></div>
+      <div><b>62</b><span><span class="l-es">Puntos anotados</span><span class="l-en">Points scored</span></span></div>
     </div>
 
     <div class="rv">
@@ -781,6 +802,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <div class="scout-col rv">
         <h4 class="sc-h ok"><span class="l-es">✓ Fortalezas demostradas</span><span class="l-en">✓ Proven strengths</span></h4>
         <ul class="sc-list ok-list">
+          <li><span class="l-es"><b>Récord y reconocimiento nacional</b> — 5 de 5 en field goals ante Old Dominion (récord de Marshall) y Lou Groza «Stars of the Week»; nº 1 de la Sun Belt en field goals (14)</span><span class="l-en"><b>Record and national recognition</b> — 5 for 5 on field goals at Old Dominion (Marshall record) and a Lou Groza «Star of the Week»; No. 1 in the Sun Belt in field goals (14)</span></li>
           <li><span class="l-es"><b>Sangre fría</b> — field goal ganador de 32 yd a 3 segundos del final ante Gardner-Webb (26-sep-2026), tras un tiempo muerto para enfriarle</span><span class="l-en"><b>Ice in his veins</b> — 32-yd game-winning field goal with 3 seconds left vs. Gardner-Webb (Sep 26, 2026), after a timeout to ice him</span></li>
           <li><span class="l-es"><b>Potencia excepcional</b> — FG de 54 yd en partido oficial de la FBS; 53 yd en instituto y 60 yd en entrenamiento</span><span class="l-en"><b>Exceptional leg power</b> — 54-yd FG in an official FBS game; 53 yd in high school and 60 yd in practice</span></li>
           <li><span class="l-es"><b>Hecho para los grandes escenarios</b> — debut ante 108.489 espectadores en Penn State, en directo en TV nacional</span><span class="l-en"><b>Built for the big stage</b> — debut in front of 108,489 fans at Penn State, live on national TV</span></li>
@@ -805,7 +827,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
     </div>
     <div class="projection rv">
       <h4><span class="l-es">📊 Proyección general</span><span class="l-en">📊 Overall projection</span></h4>
-      <p><span class="l-es">Tras los reconocimientos de instituto en Maryland, Jorge ya suma puntos oficiales con <b>Marshall</b>: 36 en seis partidos, un field goal de 54 yardas y el <b>field goal ganador</b> ante Gardner-Webb. Su siguiente medida será la consistencia durante una temporada completa de la <b>FBS</b>. Su aspiración de llegar a la NFL sigue siendo un objetivo a largo plazo.</span><span class="l-en">After his high school honors in Maryland, Jorge is now scoring official points for <b>Marshall</b>: 36 in six games, a 54-yard field goal and the <b>game-winner</b> against Gardner-Webb. The next measure is consistency over a full <b>FBS</b> season. His NFL ambition remains a long-term goal.</span></p>
+      <p><span class="l-es">Tras los reconocimientos de instituto en Maryland, Jorge ya suma puntos oficiales con <b>Marshall</b>: 62 en ocho partidos, un field goal de 54 yardas, el <b>field goal ganador</b> ante Gardner-Webb y un <b>récord histórico del club</b> con 5 de 5 en Old Dominion, que le llevó a las «Stars of the Week» del <b>Lou Groza Award</b>. Su siguiente medida será la consistencia durante una temporada completa de la <b>FBS</b>. Su aspiración de llegar a la NFL sigue siendo un objetivo a largo plazo.</span><span class="l-en">After his high school honors in Maryland, Jorge is now scoring official points for <b>Marshall</b>: 62 in eight games, a 54-yard field goal, the <b>game-winner</b> against Gardner-Webb and a <b>school record</b> 5 for 5 at Old Dominion, which earned him a <b>Lou Groza Award</b> «Star of the Week» nod. The next measure is consistency over a full <b>FBS</b> season. His NFL ambition remains a long-term goal.</span></p>
     </div>
   </div>
 </section>
@@ -824,6 +846,10 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
         <blockquote><p><span class="l-es">«Es un arma absoluta. Cada vez que nos acercamos a la yarda 30, podemos sumar puntos.»</span><span class="l-en">"It's an absolute weapon. Any time we get close to the 30-yard line, we can score points."</span></p><cite>Coach Mike Rich · The Frederick News-Post</cite></blockquote>
         <p style="color:var(--soft);margin:0 0 6px"><span class="l-es">Sus padres se levantaban <b style="color:#fff">a las 3 de la madrugada en Madrid</b> para ver sus partidos en directo. Lee las historias completas:</span><span class="l-en">His parents woke up <b style="color:#fff">at 3 a.m. in Madrid</b> to watch his games live. Read the full stories:</span></p>
         <div class="press-cards">
+          <a class="pcard" href="https://herdzone.com/news/2026/11/3/football-marshall-kicker-jorge-diaz-nicolas-named-to-lou-groza-award-stars-of-the-week" target="_blank" rel="noopener">
+            <div><div class="src"><span class="l-es">Marshall Athletics · 3 nov. 2026</span><span class="l-en">Marshall Athletics · Nov 3, 2026</span></div><h5><span class="l-es">Jorge, elegido en las «Stars of the Week» del Lou Groza Award</span><span class="l-en">Jorge named a Lou Groza Award «Star of the Week»</span></h5></div><span class="arrow">↗</span></a>
+          <a class="pcard" href="https://herdzone.com/news/2026/10/31/marshall-football-rolls-past-old-dominion-36-23" target="_blank" rel="noopener">
+            <div><div class="src"><span class="l-es">Marshall Athletics · 31 oct. 2026</span><span class="l-en">Marshall Athletics · Oct 31, 2026</span></div><h5><span class="l-es">Récord de Marshall: cinco field goals de Jorge en la victoria en Old Dominion (36-23)</span><span class="l-en">A Marshall-record five field goals for Jorge in the 36-23 win at Old Dominion</span></h5></div><span class="arrow">↗</span></a>
           <a class="pcard" href="https://herdzone.com/news/2026/9/26/marshall-football-tops-gardner-webb-in-homecoming-thriller" target="_blank" rel="noopener">
             <div><div class="src"><span class="l-es">Marshall Athletics · 26 sep. 2026</span><span class="l-en">Marshall Athletics · Sep 26, 2026</span></div><h5><span class="l-es">Crónica oficial: el field goal de Jorge a 3 segundos del final da la victoria a Marshall (36-35)</span><span class="l-en">Official recap: Jorge's field goal with 3 seconds left gives Marshall a 36-35 win</span></h5></div><span class="arrow">↗</span></a>
           <a class="pcard" href="https://wvmetronews.com/2026/09/26/marshall-survives-scare-nips-gardner-webb-36-35/" target="_blank" rel="noopener">
@@ -855,7 +881,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
       <div class="tnode rv"><div class="dot"></div><div class="yr">2023</div><h4>Catoctin High School · Maryland</h4><p><span class="l-es">Estudiante de intercambio. Descubre el football, se convierte en kicker titular y lleva a los Cougars a playoffs. Reportaje en The Frederick News-Post.</span><span class="l-en">Exchange student. Discovers football, becomes the starting kicker and leads the Cougars to the playoffs. Featured in The Frederick News-Post.</span></p><span class="tag"><span class="l-es">El arma secreta</span><span class="l-en">The secret weapon</span></span></div>
       <div class="tnode rv"><div class="dot"></div><div class="yr">2024</div><h4>Saint James School · Maryland</h4><p><span class="l-es">Año senior en un programa preparatorio de élite. Récord de 53 yardas, 45 touchbacks, doble premio WCAA y 5 estrellas en Kohl's.</span><span class="l-en">Senior year at an elite prep program. A 53-yard record, 45 touchbacks, two WCAA awards and 5 stars at Kohl's.</span></p><span class="tag">All-State · 5★</span></div>
       <div class="tnode rv"><div class="dot"></div><div class="yr">2025</div><h4>University of Virginia · ACC</h4><p><span class="l-es">Ingresa en una de las mejores universidades públicas del país, con el dorsal #92. Entrena en la élite de la Atlantic Coast Conference.</span><span class="l-en">Joins one of the country's top public universities, wearing #92. Trains among the elite of the Atlantic Coast Conference.</span></p><span class="tag"><span class="l-es">NCAA División I</span><span class="l-en">NCAA Division I</span></span></div>
-      <div class="tnode rv"><div class="dot"></div><div class="yr">2026</div><h4>Marshall University · Thundering Herd</h4><p><span class="l-es">Llega a la Sun Belt Conference con el dorsal #41. Debuta el 5 de septiembre en Penn State ante 108.489 espectadores, logra sus primeros field goals en Missouri State (3 de 3) y el 26 de septiembre da la victoria a Marshall ante Gardner-Webb con un field goal a 3 segundos del final. 36 puntos y 15 de 15 en puntos extra en sus seis primeros partidos.</span><span class="l-en">Joins the Sun Belt Conference wearing #41. Debuts on September 5 at Penn State in front of 108,489 fans, makes his first field goals at Missouri State (3 for 3) and on September 26 wins it for Marshall against Gardner-Webb with a field goal with 3 seconds left. 36 points and 15 for 15 on extra points in his first six games.</span></p><span class="tag"><span class="l-es">NCAA D-I FBS · actualidad</span><span class="l-en">NCAA D-I FBS · present day</span></span></div>
+      <div class="tnode rv"><div class="dot"></div><div class="yr">2026</div><h4>Marshall University · Thundering Herd</h4><p><span class="l-es">Llega a la Sun Belt Conference con el dorsal #41. Debuta el 5 de septiembre en Penn State ante 108.489 espectadores, logra sus primeros field goals en Missouri State (3 de 3) y el 26 de septiembre da la victoria a Marshall ante Gardner-Webb con un field goal a 3 segundos del final. El 31 de octubre firma un récord histórico de Marshall: 5 de 5 en field goals en Old Dominion, que le lleva a las «Stars of the Week» del Lou Groza Award. 62 puntos en ocho partidos y líder de la Sun Belt en field goals.</span><span class="l-en">Joins the Sun Belt Conference wearing #41. Debuts on September 5 at Penn State in front of 108,489 fans, makes his first field goals at Missouri State (3 for 3) and on September 26 wins it for Marshall against Gardner-Webb with a field goal with 3 seconds left. On October 31 he sets a Marshall record by going 5 for 5 on field goals at Old Dominion, earning a Lou Groza Award «Star of the Week» nod. 62 points in eight games and the Sun Belt leader in field goals.</span></p><span class="tag"><span class="l-es">NCAA D-I FBS · actualidad</span><span class="l-en">NCAA D-I FBS · present day</span></span></div>
     </div>
   </div>
 </section>
@@ -914,27 +940,6 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
   </div>
 </section>
 
-<!-- MARCA / COLABORACIONES -->
-<section class="brandsec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="secnum">07</span>
-      <span class="label"><span class="l-es">Marca y colaboraciones</span><span class="l-en">Brand & partnerships</span></span>
-      <h2 class="display"><span class="l-es">Una historia que conecta</span><span class="l-en">A story that connects</span></h2>
-      <p><span class="l-es">Un relato de superación, disciplina y carácter — con un protagonista joven, bilingüe y con experiencia ante la cámara.</span><span class="l-en">A story of perseverance, discipline and character — with a young, bilingual protagonist who's comfortable on camera.</span></p>
-    </div>
-    <div class="brand-cards">
-      <div class="bcard rv"><div class="ic">🎬</div><h4><span class="l-es">Cámara-friendly</span><span class="l-en">Camera-friendly</span></h4><p><span class="l-es">Experiencia previa en spots publicitarios. Natural y solvente delante de la cámara.</span><span class="l-en">Prior experience in TV commercials. Natural and confident on camera.</span></p></div>
-      <div class="bcard rv d1"><div class="ic">🌍</div><h4><span class="l-es">Puente España–EE. UU.</span><span class="l-en">Spain–U.S. bridge</span></h4><p><span class="l-es">Bilingüe y con doble audiencia: el sueño americano contado desde Madrid.</span><span class="l-en">Bilingual with a dual audience: the American dream told from Madrid.</span></p></div>
-      <div class="bcard rv d2"><div class="ic">🚀</div><h4><span class="l-es">Historia en crecimiento</span><span class="l-en">A growing story</span></h4><p><span class="l-es">Una trayectoria al alza, con recorrido por delante y narrativa de marca única.</span><span class="l-en">A rising trajectory, with room to grow and a one-of-a-kind brand narrative.</span></p></div>
-    </div>
-    <div class="spots rv">
-      <span class="lead"><span class="l-es">Ha colaborado en campañas de</span><span class="l-en">Has appeared in campaigns for</span></span>
-      <span>Orange</span><span>Nationale-Nederlanden</span><span>Caja Rural</span>
-    </div>
-  </div>
-</section>
-
 <!-- INSTAGRAM -->
 <section class="igsec" id="instagram">
   <div class="wrap">
@@ -970,7 +975,7 @@ h1.titlewall .l2{-webkit-text-stroke:2px var(--gold);text-stroke:2px var(--gold)
     <div class="brand"><span class="flag"><i></i><i></i><i></i></span> EL&nbsp;KICKER&nbsp;<b>ESPAÑOL</b></div>
     <div>Jorge Díaz Nicolás · Marshall #41 · NCAA D-I FBS · Sun Belt · <a href="https://www.instagram.com/jorge__diiazz" target="_blank" rel="noopener">@jorge__diiazz</a> · <a href="https://x.com/Jorgejrkicker" target="_blank" rel="noopener">𝕏 @Jorgejrkicker</a></div>
   </div>
-  <div class="wrap"><p class="discreet"><span class="l-es">Web de marca personal con fines informativos y promocionales. Imágenes y datos cedidos por la familia. Prensa: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports, WV MetroNews, Marshall Athletics. Estadísticas 2026: datos oficiales de Marshall a 10-oct-2026.</span><span class="l-en">Personal-brand site for informational and promotional purposes. Images and data provided by the family. Press: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports, WV MetroNews, Marshall Athletics. 2026 stats: official Marshall figures as of Oct 10, 2026.</span></p></div>
+  <div class="wrap"><p class="discreet"><span class="l-es">Web de marca personal con fines informativos y promocionales. Imágenes y datos cedidos por la familia. Prensa: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports, WV MetroNews, Marshall Athletics. Estadísticas 2026: datos oficiales de Marshall a 31-oct-2026.</span><span class="l-en">Personal-brand site for informational and promotional purposes. Images and data provided by the family. Press: The Frederick News-Post, DAZN, Cumberland Times-News, 247Sports, WV MetroNews, Marshall Athletics. 2026 stats: official Marshall figures as of Oct 31, 2026.</span></p></div>
 </footer>
 
 <script async src="//www.instagram.com/embed.js"></script>
